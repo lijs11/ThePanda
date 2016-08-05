@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="KKWaterFlowID" id="gTV-IL-0wX" customClass="KKWaterFlowCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Zk-oD-8lk">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="100"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第二届熊猫杯DotA决赛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUl-Rq-MuU" userLabel="title">
+                        <rect key="frame" x="5" y="66" width="160" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2TY-n6-EQX"/>
+                            <constraint firstAttribute="width" constant="160" id="qwZ-Jx-cwk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="熊猫杯DotA群雄武道会" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0N-DT-dzF" userLabel="name">
+                        <rect key="frame" x="5" y="80" width="105" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="REJ-F7-nYa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5398" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmA-I6-nQl" userLabel="peopleNum">
+                        <rect key="frame" x="147" y="80" width="28" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9iq-pS-H60"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
+                        <color key="textColor" red="0.1098039299" green="0.60392159219999997" blue="0.89019614459999996" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" translatesAutoresizingMaskIntoConstraints="NO" id="HZx-Fb-WMg" userLabel="peopleIma">
+                        <rect key="frame" x="127" y="79" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="CUq-4Q-GGs"/>
+                            <constraint firstAttribute="width" constant="20" id="joX-co-ERb"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3Zk-oD-8lk" secondAttribute="bottom" id="0M4-Da-82a"/>
+                <constraint firstAttribute="trailing" secondItem="dmA-I6-nQl" secondAttribute="trailing" constant="5" id="2Fy-P9-w8v"/>
+                <constraint firstItem="dmA-I6-nQl" firstAttribute="leading" secondItem="HZx-Fb-WMg" secondAttribute="trailing" id="3z8-Xr-kBh"/>
+                <constraint firstAttribute="bottom" secondItem="B0N-DT-dzF" secondAttribute="bottom" id="BIt-Xq-TXK"/>
+                <constraint firstItem="3Zk-oD-8lk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Drf-1K-Xoy"/>
+                <constraint firstItem="B0N-DT-dzF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="E9M-Ms-WA8"/>
+                <constraint firstAttribute="bottom" secondItem="HZx-Fb-WMg" secondAttribute="bottom" constant="1" id="Htj-RZ-5g5"/>
+                <constraint firstAttribute="bottom" secondItem="cUl-Rq-MuU" secondAttribute="bottom" constant="13" id="W1Z-WC-Dgj"/>
+                <constraint firstAttribute="trailing" secondItem="3Zk-oD-8lk" secondAttribute="trailing" id="jfG-UD-vVg"/>
+                <constraint firstItem="cUl-Rq-MuU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="k2v-iP-wSs"/>
+                <constraint firstItem="3Zk-oD-8lk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="keQ-G0-qrw"/>
+                <constraint firstAttribute="bottom" secondItem="dmA-I6-nQl" secondAttribute="bottom" id="vhc-Mp-o8c"/>
+            </constraints>
+            <size key="customSize" width="266" height="92"/>
+            <connections>
+                <outlet property="ImageView" destination="3Zk-oD-8lk" id="M9v-87-KNb"/>
+                <outlet property="name" destination="B0N-DT-dzF" id="E5c-Nw-u7q"/>
+                <outlet property="peopleIma" destination="HZx-Fb-WMg" id="tS1-Ka-8fq"/>
+                <outlet property="peopleNum" destination="dmA-I6-nQl" id="Hy2-JX-rlP"/>
+                <outlet property="title" destination="cUl-Rq-MuU" id="zd1-R2-dWl"/>
+            </connections>
+            <point key="canvasLocation" x="396" y="219"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="people" width="10" height="10"/>
+    </resources>
+</document>

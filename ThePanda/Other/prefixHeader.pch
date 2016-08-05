@@ -1,0 +1,68 @@
+//
+//  PrefixHeader.pch
+//  网易新闻瀑布流
+//
+//  Created by Kenny.li on 16/3/8.
+//  Copyright (c) 2016年 KK. All rights reserved.
+// $(SRCROOT)/XX/prefixHeader.pch
+
+#import <UIKit/UIKit.h>
+
+#ifndef ________PrefixHeader_pch
+#define ________PrefixHeader_pch
+
+
+#import "UIView+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "HMHttpTool.h"
+#import "UIImageView+WebCache.h"
+
+
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+
+#import "MBProgressHUD+Extension.h"
+
+
+#define  KKThinFont @"PingFangSC-Thin"
+#define  KKLightFont @"PingFangSC-Light"
+#define  KKRegularFont @"PingFangSC-Regular"
+
+//视频全屏
+#define LIVE_FULL_SCREEN @"LiveFullScreen"
+//视频正常全屏
+#define LIVE_FULL_SCREEN_NORMAL @"LiveFullScreenNormal"
+//视频正常全屏旋转
+#define LIVE_FULL_SCREEN_ROTATING @"LiveFullScreenRotating"
+//视频非全屏
+#define LIVE_NO_FULL_SCREEN @"LiveNoFullScreen"
+//测试视频
+#define AVHttp_1 @"http://admin.weixin.ihk.cn/ihkwx_upload/test.mp4"
+#define AVHttp_2 @"http://devimages.apple.com/iphone/samples/bipbop/gear1/prog_index.m3u8"
+#define AVHttp_3 @"http://player.56.com/v_NjUwNDUwODI.swf"
+
+
+//屏幕尺寸
+#define HMScreenW [UIScreen mainScreen].bounds.size.width
+#define HMScreenH [UIScreen mainScreen].bounds.size.height
+//颜色
+#define HMColor(r,g,b,h) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:h]
+
+//随机色
+#define HMRandomColor   HMColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256),1)
+#define HMRandomColorRGBA(a)   HMColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256),a)
+
+#ifdef DEBUG  //DEBUG状态
+#define NSLogg(...) NSLog(__VA_ARGS__)
+#else //发布状态
+#define NSLoggg(...)
+#endif
+
+//是否大于IOS7
+#define IOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0 )
+
+
+#endif
